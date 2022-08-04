@@ -77,24 +77,30 @@
 
     </header>
     <section>
-        <h3>Ingresar</h3>
-        <article>
+     
+       
+        <article class="ingresar">
             <form action="" method="get" enctype="multipart/form-data">
-                <fieldset>
+                <fieldset class="fieldset">
                     <legend>Iniciar Sesión</legend>
-                    <label for="usuario">Usuario o CorreoElectrónico:</label>
-                    <br>
-                    <input type="text" name="usuario" placeholder="Usuario o Email">
-                    <br>
-                    <label for="contraseña">Contraseña:</label>
-                    <br>
-                    <input type="password" name="contraseña" placeholder="Contraseña">
-
-                    <br>
-                    
-                    <input type="checkbox" name="permisos">
-                    <label for="anuncios">Recordarme</label>
-                    <br>
+                    <div class="mb-3 row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Usuario o Email:</label>
+                        <div class="col-sm-10">
+                          <input type="text" readonly class="form-control-plaintext" id="staticEmail" placeholder="Usuario o Email">
+                        </div>
+                      </div>
+                      <div class="mb-3 row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Contraseña:</label>
+                        <div class="col-sm-10">
+                          <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña">
+                        </div>
+                      </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Recordarme
+                        </label>
+                    </div>
                     
                     <input type="button" value="Entrar">
 

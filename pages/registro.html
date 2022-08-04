@@ -77,41 +77,60 @@
 
     </header>
     <section>
-        <h3>Registro</h3>
-        <article>
+        
+        <article class="registro">
             <form action="" method="get" enctype="multipart/form-data">
-                <fieldset>
+               
+                <fieldset class="fieldset">
                     <legend>Registrarse</legend>
-                    <label for="nombre">Nombres:</label>
-                    <br>
-                    <input type="text" name="nombre" placeholder="Nombre">
-                    <br>
-                    <label for="apellido">Apellidos:</label>
-                    <br>
-                    <input type="apellido" name="apellido" placeholder="Apellido">
-                    <br>
-                    <label for="sexo">Sexo:</label>
-                    <br>
-                    <input type="radio" id="hombre" name="hombre" value="hombre" > 
-                    <label for="hombre">Hombre</label>
-                    <input type="radio" id="mujer" name="mujer" value="mujer">
-                    <label for="mujer">Mujer</label>
-                    <br>
-                    <label for="correoElectronico">Correo Electrónico:</label>
-                    <br>
-                    <input type="text" name="correoElectronico" placeholder="Correo Electrónico">
-                    <br>
-                    <label for="contraseña">Contraseña:</label>
-                    <br>
-                    <input type="password" name="contraseña" placeholder="Contraseña">
-                    <br>
-                    <br>
-                    <input type="checkbox" name="anuncios">
-                    <label for="anuncios">Compartir mi información. Quiero ver anuncios relevantes y las ofertas más recientes de <strong>MeXcaL</strong>. Puedo editar esta configuración en cualquier momento en mi perfil.</label>
-                    <br>
-                    <input type="checkbox" name="terminosYCondiciones">
-                    <label for="terminosYcondiciones">Leí y acepto los Términos y condiciones de <strong>MeXcaL</strong> y la Declaración de privacidad en línea..</label>
-                    <br>
+                    <div class="mb-3 row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Nombres:</label>
+                        <div class="col-sm-10">
+                          <input type="text" readonly class="form-control-plaintext" id="staticEmail" placeholder="Nombres">
+                        </div>
+                    </div> <div class="mb-3 row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Apellidos:</label>
+                        <div class="col-sm-10">
+                          <input type="text" readonly class="form-control-plaintext" id="staticEmail" placeholder="Apellidos">
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <label for="">Sexo:</label>
+                        <br>
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Mujer
+                        </label>
+                    
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                          Hombre
+                        </label>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="staticEmail" class="col-sm-2 col-form-label">Email:</label>
+                        <div class="col-sm-10">
+                          <input type="text" readonly class="form-control-plaintext" id="staticEmail" placeholder="email@example.com">
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="inputPassword" class="col-sm-2 col-form-label">Contraseña:</label>
+                        <div class="col-sm-10">
+                          <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña">
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Compartir mi información. Quiero ver anuncios relevantes y las ofertas más recientes de MeXcaL. Puedo editar esta configuración en cualquier momento en mi perfil.
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Leí y acepto los Términos y condiciones de MeXcaL y la Declaración de privacidad en línea..
+                        </label>
+                    </div>
                     <br>
                     <input type="reset" name="atras">
                     <input type="button" value="Continuar">

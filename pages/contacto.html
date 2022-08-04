@@ -78,29 +78,27 @@
     </header>
     <section>
         <article class="contacto">
-            <fieldset>
+            <fieldset class="fieldset">
                 <legend>Contactanos</legend>
-                <label for="nombre">Nombre:</label>
+                <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
                 <br>
-                <input type="text" name="Nombre" placeholder="Nombre">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+                </div>
+                <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Correo Electrónico</label>
                 <br>
-                <label for="Correo electronico">Correo Electrónico:</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="CorreoElectrónico">
+                </div>
                 <br>
-                <input type="text" name="Correo electronico" placeholder="Correo Electrónico">
-                <br>
-                <br>
-
-                <label for="asunto">Asunto:</label>
-                
-                <br>
-                <input type="asunto" name="asunto" placeholder="Asunto">
-            
-                <br>
-
-                <label for="texto">Escríbenos:</label>
-                <br>
-                <textarea name="texto" id="" cols="40" rows="10" placeholder="Mensaje..."></textarea >
-                <br>
+                <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Asunto</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Asunto">
+                </div>
+                <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
                 <input type="submit" name="enviar">
 
             </fieldset>
